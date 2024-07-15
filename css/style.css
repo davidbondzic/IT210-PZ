@@ -1,0 +1,367 @@
+/* Start General */
+* {
+  margin:0;
+  padding:0;
+  font-family: Tahoma;
+  box-sizing:border-box;
+  -o-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+body{
+  background-color: white;
+}
+img{
+  width: 100%;
+}
+.klasa{
+  width: 25%;
+  
+}
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+/* End General */
+
+/* Start Navbar */
+nav ul {
+  background-color: #080b8d;
+}
+nav ul > li {
+  padding: 15px;
+  display: inline-block;
+  transition: all .3s ease;
+  margin-left: -5px
+}
+nav ul > li:not(:last-of-type):hover {
+  background-color: rgb(146, 45, 146)
+}
+nav ul > li:last-of-type {
+  float: right;
+}
+nav ul > li:last-of-type a .fa {
+  font-size: 21px
+}
+/* End Navbar */
+
+/* Start Menue Right */
+nav ul > ol {
+  position: absolute;
+  top: 49px;
+  right: 0;
+  background: #333;
+  text-align: center;
+  list-style: none;
+  display: none
+}
+nav ul > ol > li {
+  width: 100vw;
+  color: #FFF;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all .3s ease;
+}
+nav ul > ol > li:hover a {
+  margin: 20px;
+}
+nav ul > ol > li:hover {
+  background: #000;
+  cursor: pointer
+}
+nav ul input {
+  opacity: .7;
+  padding: 5px;
+  float: right;
+  display: none
+}
+/* Start Menue Right */
+
+/* Start Media Query */
+@media screen and (max-width:680px){
+  nav ul > li:not(:first-child) {
+    display:none
+  }
+  nav ul > li:last-of-type {
+    display: block
+  }
+  nav ul input {
+    display: inline
+  }
+}
+@media screen and (min-width:680px) {
+  nav ul > ol > li {
+    display:none
+  }
+}
+/* End Media Query */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=password], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 60px;
+}
+
+.col-50 {
+  width: 50%;
+  margin-top: 15px;
+}
+
+select{
+  width: 300px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mySlides {
+  display: none
+}
+
+.mySlides:first-of-type {
+  display: block
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.list li {
+  border-bottom: 1px solid #ccc;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.inner {
+  display: table-row;
+  overflow: hidden;
+}
+.li-img {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+  padding-right: 1em;
+}
+.li-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.li-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 70%;
+}
+.li-head {
+  margin: 0;
+}
+.li-sub {
+  margin: 0;
+}
+
+@media all and (min-width: 45em) {
+  .list li {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media all and (min-width: 75em) {
+  .list li {
+    width: 33.33333%;
+  }
+}
+footer{
+  background: rgb(12, 12, 92);
+  height: 200px;
+  width: 99vw;
+  color: white;
+  position: absolute;
+  top: 150%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+.footer-bottom{
+  text-align: center;
+  align-items: center;
+}
+.footer-bottom p{
+  color: white;
+  font-size: 15px;
+  margin-top: 15px;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  background-color: #080b8d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #080b8d;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(146, 45, 146)}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(146, 45, 146);
+}
